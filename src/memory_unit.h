@@ -72,6 +72,8 @@ class MemoryUnit {
 
     public:
     
+        bool ime{0};
+
         uint8_t read(uint16_t address) const;
         void write(uint16_t address, uint8_t data);
         void load_cartridge(char* cartridge_data, size_t size);
